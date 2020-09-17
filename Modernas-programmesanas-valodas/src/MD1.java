@@ -7,10 +7,8 @@ public class MD1 {
 
         if (Z < 1 || Z > 19 && N < 1 || N > 29) {
             System.out.println("DATI NAV KOREKTI!");
-
         } else {
             for (int column = 0; column < Z; column++) {
-
                 for (int k = 1; k < Z + N + 1; k++) {
                     if (k == Z + N) {
                         System.out.print("+ ");
@@ -25,7 +23,7 @@ public class MD1 {
                 N--;
             }
 
-
+//ruler
             for (int m = 1; m < 10; m++)
                 System.out.print(m);
             for (int j = 1; j < 4; j++) {
