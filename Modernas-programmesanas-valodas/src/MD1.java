@@ -8,7 +8,7 @@ public class MD1 {
         final String element = "+ ";
         final int rulerLength = 8;
         //tree
-        if (Z >= 1 && Z < 20 && N >= 1 && N < 30) {
+        if (Z > 0 && Z < 20 && N > 0 && N < 30) {
             for (int column = 0; column < Z; column++) {
                 for (int row = 1; row < Z + N + 1; row++) {
                     if (row == Z + N) {
