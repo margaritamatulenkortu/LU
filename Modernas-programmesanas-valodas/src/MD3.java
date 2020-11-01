@@ -102,14 +102,20 @@ class LielsSkaitlis {
             String reversed = "";
             for (int i = skaitlis.length() - 1; i >= 0; i--) {
                 String num = String.valueOf(skaitlis.charAt(i));
-                if (!num.equals("0") && !num.equals("-")) {
+                if (!num.equals("-")) {
                     reversed = reversed + skaitlis.charAt(i);
                 }
+            }
+
+            while (reversed.charAt(0) == '0') {
+                reversed = reversed.substring(1);
             }
             if (String.valueOf(skaitlis.charAt(0)).equals("-")) {
                 reversed = "-" + reversed;
             }
             skaitlis = reversed;
+
+
         } else if (zime.equals("-") || skaitlis.equals(mazs)) {
             skaitlis = mazs;
         } else {
